@@ -91,7 +91,7 @@ function createMenuMobile() {
         
         start(){
             this.click();
-            window.scrollTo(0, 500)
+            window.scrollTo(0, 0)
         },
         click(){
             document.addEventListener('click',(e) =>{
