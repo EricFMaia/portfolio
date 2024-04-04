@@ -28,6 +28,7 @@ function createSlide() {
             this.clickBtn();
             this.resetSlide();
             this.slideIndicator();
+            
         },
 
         clickBtn() {
@@ -90,6 +91,7 @@ function createMenuMobile() {
         
         start(){
             this.click();
+            window.scrollTo(0, 500)
         },
         click(){
             document.addEventListener('click',(e) =>{
