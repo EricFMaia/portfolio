@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/mobile.css" />
+    <link rel="stylesheet" href="style/reset.css" />
+
+    <title>Portfolio Eric Ferreira</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="menu-mobile">
+          <div class="contact-default">
+            <a href="https://www.linkedin.com/in/eric-f-maia/">
+              <img src="/assets/icon-linkedin.svg" alt="linkedin icon" />
+            </a>
+            <a href="https://github.com/EricFMaia">
+              <img src="/assets/icon-github.svg" alt="github icon" />
+            </a>
+          </div>
+          <div class="menu-mobile__hamburger">
+            <img
+              class="menu-mobile__icon"
+              src="/assets/icon-menuMobile.svg"
+              alt="Menu Mobile icon"
+            />
+          </div>
+        </div>
+        <ul class="menu">
+          <li><a href="#start">Inicio</a></li>
+          <li><a href="#aboutMe">Sobre mim</a></li>
+          <li><a href="#project">Projetos</a></li>
+          <div class="contact-default">
+            <a href="https://www.linkedin.com/in/eric-f-maia/">
+              <img src="/assets/icon-linkedin.svg" alt="linkedin icon" />
+            </a>
+            <a href="https://github.com/EricFMaia">
+              <img src="/assets/icon-github.svg" alt="github icon" />
+            </a>
+          </div>
+        </ul>
+        <div></div>
+      </nav>
+    </header>
+    <div id="menuMobile_popUp" class="menu-mobile__hamburger-PopUp">
+      <a href="#start" class="menu-mobile__PopUp__btn">
+        <img src="/assets/icon _home.png" alt="house icon" />
+        <h2>Inicio</h2>
+      </a>
+      <a href="#aboutMe" class="menu-mobile__PopUp__btn">
+        <img src="/assets/icon _person.png" alt="person icon" />
+        <h2>Sobre Mim</h2>
+      </a>
+      <a href="#project" class="menu-mobile__PopUp__btn">
+        <img src="/assets/icon _file.png" alt="file icon" />
+        <h2>Projetos</h2>
+      </a>
+    </div>
+    <main>
+      <section id="start" class="home">
+        <h2 class="hiddenContent">Olá, sou Eric</h2>
+        <h1 class="hiddenContent">Desenvolvedor Front-end</h1>
+      </section>
+      <section id="aboutMe" class="aboutMe">
+        <article class="aboutMe__text-container hiddenContent">
+          <div class="aboutMe__title">
+            <p>Olá meu nome é</p>
+            <h2>Eric Ferreira Maia</h2>
+            <span>
+              <p>Eu sou</p>
+              <h2>Desenvolvedor web</h2>
+            </span>
+          </div>
+          <ul class="aboutMe__list hiddenContent">
+            <li>Desenvolvedor web em evolução</li>
+            <li>Cursando Sistemas de informação na Faculdade Promove</li>
+            <li>
+              Busco Oportunidade na area de front-end para aprimorar meu
+              conhecimento
+            </li>
+          </ul>
+        </article>
+        <div class="aboutme__gears hiddenContent">
+          <img
+            class="aboutme__small-gear"
+            src="/assets/Vector.svg"
+            alt="engrenagem pequena rodando para esqueda"
+          />
+          <img
+            class="aboutme__big-gear"
+            src="/assets/Group 1.svg"
+            alt="engrenagem grande rodando para a direita"
+          />
+          <span class="aboutme__gears__animation animation-1">HTML</span>
+          <span class="aboutme__gears__animation animation-2">CSS</span>
+          <span class="aboutme__gears__animation animation-3">JAVASCRIPT</span>
+        </div>
+      </section>
+      <section class="Skills">
+        <div class="Skills__card-container hiddenContent">
+          <div class="skills__card">
+            <img src="/assets/icons-html.png" alt="html icon" />
+            <h3>HTML</h3>
+          </div>
+          <div class="skills__card">
+            <img src="/assets/icons-css.png" alt="css icon" />
+            <h3>CSS</h3>
+          </div>
+          <div class="skills__card">
+            <img src="/assets/icons-js.png" alt="javascript incon" />
+            <h3>JAVASCRIPT</h3>
+          </div>
+          <div class="skills__card">
+            <img src="/assets/icons-ts.png" alt="typescript icon" />
+            <h3>TYPESCRIPT</h3>
+          </div>
+        </div>
+      </section>
+      <section id="project" class="projects">
+        <div class="projects__text hiddenContent">
+          <h2>Projetos</h2>
+          <p>
+            Projeto que fiz ao longo da minha <br />trajetória de
+            desenvolvimento />
+          </p>
+        </div>
+        <div class="projects__card-container hiddenContent">
+            <a href="#project" id="card1" class="projects__cards card-1"></a>
+            <a href="#project" id="card2" class="projects__cards card-2"></a>
+            <a href="#project" id="card3" class="projects__cards card-3"></a>
+            <a href="#project" id="card4" class="projects__cards card-4"></a>
+          
+          <div class="project-mobile__conteiner-btns-slide">
+            <div
+              id="slideBtnLeft"
+              class="project-mobile__btns-slide btn-slide-left"
+            >
+              <div class="arrow arrow-left">
+                <img
+                  src="/assets/icon-arrowhead.png"
+                  alt="arrowhead to slide"
+                />
+              </div>
+            </div>
+            <div class="SlideIndicator__container">
+              <div id="step1" class="SlideIndicator__steps"></div>
+              <div id="step2" class="SlideIndicator__steps"></div>
+              <div id="step3" class="SlideIndicator__steps"></div>
+              <div id="step4" class="SlideIndicator__steps"></div>
+            </div>
+            <div
+              id="slideBtnRight"
+              class="project-mobile__btns-slide btn-slide-right"
+            >
+              <div class="arrow arrow-right">
+                <img
+                  src="/assets/icon-arrowhead.png"
+                  alt="arrowhead to slide"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/ScrollReveal.js"></script>
+  </body>
+</html>

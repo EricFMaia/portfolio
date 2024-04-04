@@ -1,0 +1,454 @@
+.menu-mobile{
+    width: calc(100% - 60px);
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 30px;
+}
+.menu-mobile__contato{
+    display: none;
+}
+.menu-mobile__hamburger{
+    height: 35px;
+    width: 40px;
+    
+}
+.menu-mobile__hamburger img{
+    height: 35px;
+    width: 40px;
+    
+}
+.menu-mobile__hamburger-PopUp{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color:#03141bec;
+    z-index: 2;
+    gap: 20px;
+}
+.menu-mobile__PopUp__btn{
+    transition: 1s;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 30px;
+    height: 100px;
+    width: 70%;
+    background-color: #03141b;
+    filter: drop-shadow(0px 0px 10px #010709);
+    border-radius: 25px;
+}
+.menu-mobile__PopUp__btn img{
+    pointer-events: none;
+    height: 60px;
+    width: 60px;
+}
+.menu-mobile__PopUp__btn h2{
+    pointer-events: none;
+    font-size: 2em;
+    color: #04BADC;
+}
+
+.projects__card-container{
+    position: relative;
+}
+.card-1{
+    z-index: 4;
+}
+.card-2{
+    z-index: 3;
+}
+.card-3{
+    z-index: 2;
+}
+.card-4{
+    z-index: 1;
+}
+.project-mobile__conteiner-btns-slide{
+    pointer-events: none;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+.project-mobile__btns-slide{
+    pointer-events: none;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 400px;
+    width: 90px;
+    
+}
+.arrow{
+    height: 40px;
+    width: 40px;
+    
+}
+.arrow img{
+    height: 70px;
+    width: 60px;
+    
+}
+.arrow-right{
+    rotate: 180deg;
+    transform: translateY(-30px);
+}
+.btn-slide-left{
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%,#041113 80%);
+     
+}
+
+
+.btn-slide-right{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%,#041113 80%);
+    
+}
+.SlideIndicator__container{
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 10px;
+    gap: 20px;
+    
+
+}
+.SlideIndicator__steps{
+    background-color: #041113;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+}
+.SlideIndicator__steps-active{
+    background-color: #04BADC;
+    
+}
+
+@media (max-width: 992px) {
+    .menu{
+        display: none;
+    }
+    .menu-mobile{ 
+        height: 50px;
+        display: flex;
+        
+    }
+    .menu-mobile__contato{
+        display: flex;
+        
+    }
+    .home{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0px;
+        
+    }
+    .home h2{
+        font-size: 2.8rem;
+    }
+    .home h1{
+        font-size: 3.0rem;
+        font-weight: 800;
+        
+    }
+     /**/
+    .aboutMe{
+        height: 55vh;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .aboutMe__text-container {
+        justify-content: center;
+        height: 120% ;
+        width: calc(100% - 80px);
+        gap: 20px;
+        padding: 0px 40px;
+         
+    }
+    .aboutMe__title{
+        height: auto;
+        gap: 2px;
+    }
+    .aboutMe__title h2{
+        font-size: 1.7em ;
+
+    }
+    .aboutMe__title p{
+        font-size: 1.7em ;
+       
+    }
+    .aboutMe__list{
+        padding: 0px 20px;
+        gap: 9px;
+        font-size: 0.9rem;
+        
+    }
+    .aboutme__gears{
+        display: none;
+    }
+    /**/
+    .Skills{
+        background: var(--bg-primary);
+        width: 100%;
+        height: 45vh;
+        
+    }
+    .Skills__card-container {
+        width: 90%;
+    }
+    .skills__card{
+        justify-content: center;
+    
+        height: 135px;
+        width: 135px;
+    
+        border: 2px solid var(--light-color);
+        border-radius: 20px;
+    
+    }
+    .skills__card:hover{
+        font-size: 0.8rem;
+        height: 135px;
+        width: 135px;
+    }
+    
+    .skills__card img{
+        height: 80px;
+        width: 80px;
+    }
+    /**/
+    .projects{
+        height:105vh;
+        padding-top: 65px;
+        justify-content: start;
+        gap: 30px;
+        
+        
+    }
+    .projects__text{
+        gap: 20px;
+        height: fit-content;
+        width: auto;
+        
+        
+    }
+    
+    .projects__text h2{
+        font-size: 2rem;
+        
+    }
+    .projects__text p{
+        font-size: 1rem;
+    }
+   
+    .projects__card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 100vw;
+        overflow: hidden;
+        gap: 30px;
+        
+    }
+    .projects__cards{
+        position: absolute;
+        transition: 1s;
+        height: 400px;
+        width: 100vw;
+        opacity: 1;
+        border-radius: 0px;
+        border: 2px solid rgb(232, 232, 232);
+    }
+    .projects__cards:hover{
+        translate: 0px 0px;
+        height: 400px;
+        width: 100vw;
+        border: 2px solid rgb(232, 232, 232);
+        
+    }
+    .project-mobile__conteiner-btns-slide{
+        position: absolute;
+        opacity: 1;
+    }
+    .project-mobile__btns-slide{
+        pointer-events: all;
+    }
+    
+    
+
+}
+@media (max-width: 675px) {
+    .home h2{
+        font-size: 2.4rem;
+    }
+    .home h1{
+        font-size: 2.5rem;
+        font-weight: 800;
+        
+    }
+    .aboutMe__text-container {
+        height: 130% ;
+        gap: 15px;
+        padding: 0px 10px;
+         
+    }
+    .aboutMe__title h2{
+        font-size: 1.7em ;
+
+    }
+    .aboutMe__title p{
+        font-size: 1.7em ;
+       
+    }
+    .projects__text p {
+        font-size: 0.8rem;
+    }
+
+
+}
+@media (max-width: 575px) {
+    .home h2{
+        font-size: 2.0rem;
+    }
+    .home h1{
+        font-size: 2.0rem;
+        font-weight: 900;
+        
+    }
+    .menu-mobile__PopUp__btn{
+        width: 80%;
+    }
+    .aboutMe{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        
+        background-color: var(--bg-primary);
+    }
+    .aboutMe__text-container {
+        height: 100% ;
+        gap: 10px;
+        padding: 0px;
+         
+    }
+    .aboutMe__title h2{
+        font-size: 1.5em ;
+
+    }
+    .aboutMe__title p{
+        font-size: 1.5em ;
+       
+    }
+    .Skills{ 
+        height: 30vh;
+        align-items: start;
+        
+    }
+    .skills__card {
+        height: 120px;
+        width: 120px;
+        border: none; 
+        
+        
+    }
+    h3{
+        display: none;
+    }
+    .skills__card:hover{
+        height: 120px;
+        width: 120px;
+        border: none;
+        filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+    }
+    .skills__card img{
+        transition: 1s;
+        height: 80px;
+        width: 80px;
+    }
+    
+}
+@media (max-width: 415px) {
+    .home h2{
+        font-size: 1.8rem;
+    }
+    .home h1{
+        font-size: 1.8rem;
+        
+        
+    }
+    .menu-mobile__PopUp__btn{
+        width: 90%;
+    }
+    .menu-mobile__PopUp__btn img{
+        height: 50px;
+        width: 50px;
+    }
+    .menu-mobile__PopUp__btn h2{
+        font-size: 1.6em;
+        color: #04BADC;
+    }
+    .aboutMe__title h2{
+        font-size: 1.3em ;
+
+    }
+    .aboutMe__title p{
+        font-size: 1.3em ;
+       
+    }
+}
+@media (max-width: 380px) {
+    .home h2{
+        font-size: 1.6rem;
+    }
+    .home h1{
+        font-size: 1.6rem;
+     
+    }
+    .aboutMe__title h2{
+        font-size: 1.2em ;
+
+    }
+    .aboutMe__title p{
+        font-size: 1.2em ;
+       
+    }
+    .project-mobile__btns-slide{
+        width: 50px
+        
+    }
+}
+/*animation slide*/
+
+@keyframes slide{
+    0%{
+        transform: scaleX(0);
+        transform: scaleX(0);
+        transform-origin: 0% 0%;
+    }
+    
+    100%{
+        transform: scaleX(1);
+        transform: scaleX(1);
+        transform-origin: 0% 0%;
+    }
+
+}
+
